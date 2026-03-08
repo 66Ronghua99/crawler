@@ -1,0 +1,28 @@
+[
+    {
+        "domain": ".xiaohongshu.com",
+        "expirationDate": 1803703867.250054,
+        "hostOnly": false,
+        "httpOnly": true,
+        "name": "web_session",
+        "path": "/",
+        "sameSite": null,
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "040069b1265c2d56e92ad26a943b4b7168613d"
+    },
+    {
+        "domain": ".xiaohongshu.com",
+        "expirationDate": 1803703867.250203,
+        "hostOnly": false,
+        "httpOnly": true,
+        "name": "id_token",
+        "path": "/",
+        "sameSite": null,
+        "secure": true,
+        "session": false,
+        "storeId": null,
+        "value": "VjEAACB0rdMTgw+K0hj8TD3eSuEqz5PHqzHp00bNTogZIUOOl/iLrwXtpFdRTqlL1YrI12qM3ErZtBlmaLX/WTUbOEf4uW6EPEOAl528JfAhH692OWKSdDvVyhh0Ay3y+RvBI8bj"
+    }
+]
