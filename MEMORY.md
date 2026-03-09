@@ -43,3 +43,10 @@
 - **预防**:
   - 发布触发采用 `release: published`，避免误触发
   - `npm publish` 使用 `--provenance` 保留供应链证明
+
+### 2026-03-09（npm scope 命名限制）
+- **问题**: `@cory-ronghua/video-download-mcp` 发布时报 E400：`That word is not allowed`
+- **解决方案**: 改名为 `@cory-ronghua/video-fetch-mcp`，规避被过滤词
+- **预防**:
+  - scope 名称先用 npm 网站或试发布验证可用性
+  - 遇到 scope 审核/保留词限制时优先用无 scope 唯一包名恢复发布

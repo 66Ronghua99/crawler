@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * MCP Server for video-download-mcp
+ * MCP Server for video-fetch-mcp
  */
 
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js';
@@ -12,7 +12,7 @@ import { downloadFromCandidate, downloadFile } from './downloader/index.js';
 
 function createMcpServer(): McpServer {
   const mcpServer = new McpServer({
-    name: 'video-download-mcp',
+    name: 'video-fetch-mcp',
     version: '1.0.0',
   });
 
@@ -172,7 +172,7 @@ export async function startMcpServer(): Promise<void> {
   const mcpServer = createMcpServer();
   const transport = new StdioServerTransport();
   await mcpServer.connect(transport);
-  console.error('video-download-mcp server running on stdio');
+  console.error('video-fetch-mcp server running on stdio');
 }
 
 function isRunAsEntry(): boolean {

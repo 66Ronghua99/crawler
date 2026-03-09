@@ -1,5 +1,5 @@
 /**
- * Type definitions for video-download-mcp
+ * Type definitions for video-fetch-mcp
  */
 
 export type MediaKind = 'm3u8' | 'mpd' | 'file' | 'segment' | 'json_hint';
