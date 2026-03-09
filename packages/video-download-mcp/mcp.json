@@ -1,8 +1,8 @@
 {
   "mcpServers": {
-    "video-download-mcp": {
+    "video-fetch-mcp": {
       "command": "npx",
-      "args": ["-y", "video-download-mcp"]
+      "args": ["-y", "@cory-ronghua/video-fetch-mcp"]
     }
   }
 }

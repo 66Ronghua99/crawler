@@ -1,8 +1,8 @@
-# 20260309 video-download-mcp npm release
+# 20260309 video-fetch-mcp npm release
 
 ## Problem
 - 需要让用户无需本地编译即可使用 MCP。
-- 需要统一品牌命名为 `video-download-mcp`，并支持 `claude mcp add ... -- npx -y video-download-mcp`。
+- 需要统一发布命名为 `@cory-ronghua/video-fetch-mcp`，并支持 `claude mcp add ... -- npx -y @cory-ronghua/video-fetch-mcp`。
 
 ## Boundary & Ownership
 - In scope:
@@ -22,7 +22,7 @@
   - 缺点: 需要维护 npm 版本与发布凭据
 
 ## Migration Plan
-1. 重命名包目录与服务标识为 `video-download-mcp`。
+1. 重命名发布包名为 `@cory-ronghua/video-fetch-mcp`。
 2. 添加 npm 可执行入口（`bin`）和 `prepack` 构建钩子。
 3. 补齐发布检查命令 `release:check`（`npm pack --dry-run`）。
 4. 新增 GitHub Actions（release published 触发）自动发布 npm。
@@ -32,11 +32,11 @@
 - `npm run typecheck`
 - `npm run build`
 - `npm_config_cache=/tmp/npm-cache-crawler npm run release:check`
-- `claude mcp get video-download-mcp`（发布后验收）
+- `claude mcp get video-fetch-mcp`（发布后验收）
 
 ## Acceptance Criteria
 - AC1: npm 包可成功 `pack --dry-run`，包含 `dist` 与可执行入口。
-- AC2: `claude mcp add ... npx -y video-download-mcp` 作为标准导入路径可用。
+- AC2: `claude mcp add ... npx -y @cory-ronghua/video-fetch-mcp` 作为标准导入路径可用。
 - AC3: GitHub Release（published）可触发自动发布工作流。
 
 ## Evidence Paths

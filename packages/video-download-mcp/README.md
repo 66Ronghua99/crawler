@@ -1,4 +1,4 @@
-# video-download-mcp
+# @cory-ronghua/video-fetch-mcp
 
 MCP server for resolving and downloading videos from social/video share links.
 Current production focus: Douyin and Xiaohongshu.
@@ -21,10 +21,10 @@ npm run serve
 
 ```bash
 # Resolve URL and list candidates
-video-download-cli resolve "https://v.douyin.com/xxx"
+video-fetch-cli resolve "https://v.douyin.com/xxx"
 
 # Resolve and download
-video-download-cli download "https://v.douyin.com/xxx" -o ./videos
+video-fetch-cli download "https://v.douyin.com/xxx" -o ./videos
 ```
 
 ## Publish to npm
@@ -55,7 +55,7 @@ Release-driven publish (recommended):
 After package is published:
 
 ```bash
-claude mcp add video-download-mcp -- npx -y video-download-mcp
+claude mcp add video-fetch-mcp -- npx -y @cory-ronghua/video-fetch-mcp
 ```
 
 Equivalent MCP JSON:
@@ -63,9 +63,9 @@ Equivalent MCP JSON:
 ```json
 {
   "mcpServers": {
-    "video-download-mcp": {
+    "video-fetch-mcp": {
       "command": "npx",
-      "args": ["-y", "video-download-mcp"]
+      "args": ["-y", "@cory-ronghua/video-fetch-mcp"]
     }
   }
 }

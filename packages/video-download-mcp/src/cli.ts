@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * CLI tool for video-download-mcp
+ * CLI tool for video-fetch-mcp
  */
 
 import { resolveUrl } from './resolver/browser.js';
@@ -38,14 +38,14 @@ function printHelp(): void {
 Video Download MCP CLI
 
 Usage:
-  video-download-cli resolve <url>              Resolve a URL and list candidates
-  video-download-cli download <url> -o <dir>    Download a video from URL
-  video-download-cli serve                      Start MCP Server
+  video-fetch-cli resolve <url>              Resolve a URL and list candidates
+  video-fetch-cli download <url> -o <dir>    Download a video from URL
+  video-fetch-cli serve                      Start MCP Server
 
 Examples:
-  video-download-cli resolve "https://v.douyin.com/xxx"
-  video-download-cli download "https://v.douyin.com/xxx" -o ./videos
-  video-download-cli serve
+  video-fetch-cli resolve "https://v.douyin.com/xxx"
+  video-fetch-cli download "https://v.douyin.com/xxx" -o ./videos
+  video-fetch-cli serve
 `);
 }
 

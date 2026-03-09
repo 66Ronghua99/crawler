@@ -1,12 +1,12 @@
-# Checklist - video-download-mcp npm release
+# Checklist - video-fetch-mcp npm release
 
 ## Implementation
 - [x] 包目录重命名为 `packages/video-download-mcp`
-- [x] MCP server 名称重命名为 `video-download-mcp`
+- [x] MCP server 名称重命名为 `video-fetch-mcp`
 - [x] `package.json` 增加 `bin/files/prepack/release:check`
 - [x] 入口文件加 shebang，支持 npm bin 直接执行
 - [x] README 更新为 npm 发布与 `claude mcp add` 接入
-- [x] `mcp.json` 更新为 `npx -y video-download-mcp`
+- [x] `mcp.json` 更新为 `npx -y @cory-ronghua/video-fetch-mcp`
 - [x] 新增 GitHub Actions 发布工作流
 
 ## Evidence
@@ -23,5 +23,5 @@
 ## Follow-up
 - [ ] 在 npm 网站绑定 Trusted Publisher（GitHub Actions）
 - [ ] 发布 GitHub Release 并观察发布工作流
-- [ ] 发布后在干净环境验证 `claude mcp add video-download-mcp -- npx -y video-download-mcp`
+- [ ] 发布后在干净环境验证 `claude mcp add video-fetch-mcp -- npx -y @cory-ronghua/video-fetch-mcp`
 - [ ] 规划 YouTube/Bilibili adapter 设计文档

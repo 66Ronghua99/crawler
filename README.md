@@ -17,10 +17,10 @@ npm run serve
 
 ## Claude Code Integration
 
-After publishing `video-download-mcp` to npm:
+After publishing `@cory-ronghua/video-fetch-mcp` to npm:
 
 ```bash
-claude mcp add video-download-mcp -- npx -y video-download-mcp
+claude mcp add video-fetch-mcp -- npx -y @cory-ronghua/video-fetch-mcp
 ```
 
 ## Publishing

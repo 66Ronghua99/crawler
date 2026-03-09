@@ -1,7 +1,7 @@
 # Progress
 
 ## 项目背景
-- **项目名称**: video-download-mcp
+- **项目名称**: @cory-ronghua/video-fetch-mcp
 - **类型**: Node.js/TypeScript CLI + MCP Server
 - **目标**: 实现可发布到 npm 并可被 Claude Code 一键导入的多平台视频下载 MCP
 
@@ -43,8 +43,9 @@
 - 消除 MCP stdio 污染（resolver/downloader 输出迁移到 stderr）
 - 修复 claude mcp 本地注册命令，改为运行已构建产物 `dist/index.js`
 - 质量门禁通过：`npm run typecheck`、`npm run build`
-- 连通性验证通过：`claude mcp get video-download-mcp` / `claude mcp list` 均为 `✓ Connected`
+- 连通性验证通过：`claude mcp get video-fetch-mcp` / `claude mcp list` 均为 `✓ Connected`
 - 包与服务统一重命名为 `video-download-mcp`
+- 包发布名调整为 `@cory-ronghua/video-fetch-mcp`（规避 npm 命名过滤）
 - 增加 npm 发布配置：`bin`、`files`、`prepack`、`release:check`
 - 新增 GitHub Actions 发布流水线：`.github/workflows/publish-video-download-mcp.yml`
 - 发布流水线已切换为 npm Trusted Publishing（OIDC + provenance，无需 NPM_TOKEN）
